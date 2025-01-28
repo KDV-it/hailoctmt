@@ -8,7 +8,7 @@ function App() {
   const [urlLC, setUrlLC] = useState("");
 
   const handleOnClick = () => {
-    let random = Math.floor(Math.random() * 20);
+    let random = Math.floor(Math.random() * 60);
     if (random === 0) random += 1;
     console.log("random", random);
     if (random < 10) setUrlLC(`/img/loiChua/LC0${random}.png`);
